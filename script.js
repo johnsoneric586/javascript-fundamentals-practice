@@ -148,3 +148,22 @@ myCountry['population'] -= 2;
 
 // console.log(myCountry['population']);
 //----------------------------------------------
+// 9) Add a method called describe to the myCountry object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+
+// Call the describe method.
+
+// Add a method called checkIsland to the myCountry object. This method will set a new property on the object, called isIsland. isIsland will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+
+myCountry.describe = function () {
+  return console.log(
+    `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighbouring countries, and a capital city called ${this.capital}.`
+  );
+};
+
+// myCountry.describe();
+
+myCountry.checkIsland = function () {
+  return this.neighbors.length === 0 ? true : false;
+};
+//----------------------------------------------
+// 10) There are elections in your country! in a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'.
