@@ -45,3 +45,11 @@ const percentageOfWorld2 = function (population) {
 
 // ----------------------------------------------
 // 3)
+// Recreate the last assignment, but this time create an arrow function called percentageOfWorld3.
+
+const percentageOfWolrd3 = population => (population / 7900) * 100;
+
+// console.log(percentageOfWolrd3(333.3));
+
+//----------------------------------------------
+// 4)
