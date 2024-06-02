@@ -200,10 +200,9 @@ const listOfNeighbours = [
   ['Norway', 'Sweden', 'Russia'],
 ];
 
-// for (let i = 0; i < listOfNeighbours.length; i++) {
-//   for (let j = 0; j < listOfNeighbours[i].length; i++) {
-//     console.log(`Neighbour: ${listOfNeighbours[i]}`);
-//   }
-// }
-
-// TODO FIGURE OUT WHAT'S WRONG WITH THE CODE ABOVE^
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+  }
+}
+//----------------------------------------------
