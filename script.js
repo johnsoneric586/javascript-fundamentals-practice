@@ -200,9 +200,26 @@ const listOfNeighbours = [
   ['Norway', 'Sweden', 'Russia'],
 ];
 
-for (let i = 0; i < listOfNeighbours.length; i++) {
-  for (let j = 0; j < listOfNeighbours[i].length; j++) {
-    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
-  }
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+//   }
+// }
+//----------------------------------------------
+
+// 13) Recreate the challenge from the lecture Looping Arrays, Breaking and Continuing, (#11) but this time using a while loop (call the array percentages3).
+
+// Reflect on what solution you like better for this task: the for loop or the while loop?
+
+// Use a WHILE loop to compute an array called percentages3 containing the percentages of the world population for the 4 population values. Use the function percentageWOrld1 that you created earlier.
+
+const percentages3 = [];
+
+let counter = 0;
+
+while (counter < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[counter]));
+  counter++;
 }
+
 //----------------------------------------------
